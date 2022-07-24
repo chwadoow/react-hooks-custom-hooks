@@ -1,23 +1,13 @@
 import React from "react";
-import { Route, Switch } from "react-router-dom";
-import Header from "./Header";
-import HomePage from "./HomePage";
-import ArticlePage from "./ArticlePage";
+import logo from "../assets/logo.svg";
 
-function App() {
+function About() {
   return (
-    <div className="App">
-      <Header />
-      <Switch>
-        <Route path="/articles/:id">
-          <ArticlePage />
-        </Route>
-        <Route path="/">
-          <HomePage />
-        </Route>
-      </Switch>
-    </div>
+    <aside>
+      <img src={logo} alt="blog logo" />
+      <p>A blog about learning React</p>
+    </aside>
   );
 }
 
-export default App;
+export default About;
